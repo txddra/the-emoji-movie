@@ -1,12 +1,12 @@
 //step one:
-const day = require('./day.js');
+const day = require('./day.js')
 
 //step two:
-const badDay = function(day){
+const badDay = function(){
    for(let i = 0; i < day.length; i++){
-       console.log('hi')
+       console.log(day[i])
    } 
 }
-
 //step three:
-setInterval(badDay,1000)
+//isn't working for me
+setInterval(badDay,1000);
