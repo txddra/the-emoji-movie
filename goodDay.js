@@ -6,5 +6,13 @@ const goodDay = function(){
 console.log(day[i]);
     }
 }
-setInterval(goodDay[i],1000)
 
+
+const goodDayTimeOut = setInterval(goodDay[i],1000)
+
+
+  const endIt = function(){
+      clearInterval(goodDayTimeOut);
+
+  }
+  setTimeout(endIt,5000)
