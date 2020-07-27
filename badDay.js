@@ -2,11 +2,15 @@
 const day = require('./day.js')
 
 //step two:
-const badDay = function(){
-   for(let i = 0; i < day.length; i++){
-       console.log(day[i])
-   } 
+let i = 0;
+const badDay = function () {
+    console.clear();
+    console.log(day[i])
+    i = i + 1;
+    if(i > day.length){
+        clearInterval(badDayInterval)
+    }
 }
 //step three:
 //isn't working for me
-setInterval(badDay,1000);
+const badDayInterval = setInterval(badDay, process.argv[2]);
